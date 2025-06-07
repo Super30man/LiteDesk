@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebOS</title>
+  <link rel="stylesheet" href="assets/styles/style.css" />
+  <link rel="stylesheet" href="assets/styles/calculator.css" />
+</head>
 
+<body>
+  <!-- App windows (calculator etc.) -->
+  <div id="calculator-app" class="app-window hidden">
+    <div class="app-header">
+      <span>Calculator</span>
+      <button id="close-calculator">✖</button>
+    </div>
+    <input type="text" id="calc-display" readonly />
+    <div class="calc-buttons">
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button data-value="/">÷</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button data-value="*">×</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button data-value="-">−</button>
+
+      <button data-value="0">0</button>
+      <button data-value=".">.</button>
+      <button id="calc-clear">C</button>
+      <button data-value="+">+</button>
+
+      <button id="calc-equals" colspan="4">=</button>
+    </div>
+  </div>
+
+  <!-- Bottom Taskbar -->
+  <div class="taskbar">
+    <div class="taskbar-icon" id="calculator-icon">
+      <img src="assets/icons/calculator.png" alt="Calculator" />
+    </div>
+    <!-- You can add more icons here -->
+  </div>
+
+  <script src="assets/scripts/main.js"></script>
+  <script src="assets/scripts/calculator.js"></script>
+</body>
+
+</html>
